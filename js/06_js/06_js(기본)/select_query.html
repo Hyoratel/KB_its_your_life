@@ -1,0 +1,42 @@
+<!-- <head>
+  <script>
+    window.onload = function () {
+      // 객체 선택
+      let header = document.querySelector('h1');
+
+        //객체 조작
+      header.style.color = 'orange';
+      header.style.background = 'red';
+      header.textContent = 'From JavaScript';
+    };
+  </script>
+</head>
+<body>
+  <h1>Header</h1>
+  <h1>Header</h1>
+  <h1>Header</h1>
+</body> -->
+
+이벤트 추가를 위한 this 사용
+<head>
+  <script>
+    window.onload = function () {
+      // 모든 h1 요소 선택
+      let headers = document.querySelectorAll('h1');
+
+      // 각 h1 요소에 대해 이벤트 추가
+      headers.forEach(function (header) {
+        header.onclick = function () {
+          this.style.color = 'orange';
+          this.style.background = 'red';
+          this.textContent = 'From JavaScript';
+        };
+      });
+    };
+  </script>
+</head>
+<body>
+  <h1>Header 1</h1>
+  <h1>Header 2</h1>
+  <h1>Header 3</h1>
+</body>

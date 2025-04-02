@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01.form</title>
+    <script>
+      window.onload = function () {
+        // alert 창에는 내가 적은 이름이 떠야함
+
+        // 변수 설정
+        let name = document.getElementById('name');
+        console.log(name.value);
+
+        // 버튼을 눌렀을 때 'name' 값이 전송됨.
+        const $btn = document.getElementById('btn');
+        $btn.addEventListener('click', () => {
+          alert(name.value);
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <form>
+      <label for="name">이름:</label>
+      <input id="name" name="name" type="text" size="30" />
+      <input id="btn" type="button" value="전송" />
+    </form>
+  </body>
+</html>

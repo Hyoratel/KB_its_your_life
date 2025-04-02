@@ -1,0 +1,42 @@
+<script>
+//     window.onload = function(){
+//         let headers = document.querySelectorAll('h1');
+
+//         for(let i=0; i<headers.length;i++){
+//         let header = headers[i];
+//         header.style.color = 'orange';
+//         header.style.background = 'red';
+//         // header.innerHTML = 'From JavaScript';
+//         header.textContent = 'From JavaScript';
+//     };
+// };
+
+// forEach문
+// 1)forEach(function(요소,인덱스,배열){) });
+// 2)화살표 함수와 함께  사용
+// 3)querySelectorAll() 함께 사용
+// 4)forEach() 와 this 사용
+window.onload = function(){
+    let headers = document.querySelectorAll('h1').forEach((header)=>{
+        header.style.color = 'orange';
+        header.style.background = 'red';
+        // header.innerHTML = 'From JavaScript';
+        header.textContent = 'From JavaScript';
+    });
+}
+
+window.onload = function(){
+    let headers = document.querySelectorAll('h1').forEach(function(header){
+        header.style.color = 'orange';
+        header.style.background = 'red';
+        // header.innerHTML = 'From JavaScript';
+        header.textContent = 'From JavaScript';
+    });
+}
+</script>
+</head>
+<body>
+<h1>Header</h1>
+<h1>Header</h1>
+<h1>Header</h1>
+</body>

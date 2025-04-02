@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oneTrue</title>
+    <style>
+      body {
+        width: 500px;
+        margin: 10px auto;
+      }
+      #middle {
+        overflow: hidden;
+      }
+      /* #middle ::after {
+        content: "";
+        display: block;
+        clear: both;
+      } */
+      #left {
+        float: left;
+        width: 150px;
+        height: 100px;
+        background: red;
+      }
+      #right {
+        float: right;
+        width: 350px;
+        height: 100px;
+        background: blue;
+      }
+      #top {
+        background: green;
+        height: 50px;
+      }
+      #bottom {
+        background: purple;
+        height: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div#*3 -->
+    <div id="top"></div>
+    <div id="middle">
+      <div id="left"></div>
+      <div id="right"></div>
+    </div>
+    <div id="bottom"></div>
+  </body>
+</html>

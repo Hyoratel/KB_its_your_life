@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oneTrue</title>
+    <style>
+      body {
+        width: 500px;
+        margin: 10px auto;
+      }
+      #middle {
+        overflow: hidden;
+        /* position: relative;
+        height: 110px; */
+      }
+      /* #middle ::after {
+        content: "";
+        display: block;
+        clear: both;
+      } */
+      #left {
+        float: left;
+        /* position: absolute; */
+        /* left: 0; */
+        width: 150px;
+        height: 100px;
+        background: red;
+      }
+      #right {
+        float: right;
+        /* position: absolute; */
+        /* right: 0; */
+        width: 350px;
+        height: 100px;
+        background: blue;
+      }
+      #top {
+        background: green;
+        height: 50px;
+      }
+      #bottom {
+        background: purple;
+        height: 50px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- div#*3 -->
+    <div id="top">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus,
+      eaque! Quas quibusdam explicabo incidunt, ratione numquam cum iure tenetur
+      ipsa neque voluptatum modi nobis dignissimos quaerat labore obcaecati!
+      Minima, libero!
+    </div>
+    <div id="middle">
+      <div id="left">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+        dolorum earum, sequi mollitia maxime explicabo natus? Harum sed corporis
+        sit,
+      </div>
+      <div id="right">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique in
+        iusto adipisci. Possimus magni officiis sapiente, facere, eius illo
+        voluptatibus officia distinctio soluta perferendis vero dolorum placeat
+        minima eos consequatur?
+      </div>
+    </div>
+    <div id="bottom">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
+      harum nostrum aperiam deleniti magnam quibusdam numquam quo tempore, hic
+      id doloremque libero ipsa velit fugit quod! Veritatis adipisci fugiat eos.
+    </div>
+  </body>
+</html>

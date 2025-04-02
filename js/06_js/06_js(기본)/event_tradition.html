@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event_tradition</title>
+
+    <!-- 인라인 이벤트 모델 사용 -->
+    <!-- <script>
+    </script>
+  </head>
+  <body>
+    <button onclick="alert('click')">버튼</button>
+  </body>
+</html> -->
+
+    <!-- script 태그에 인라인 이벤트 모델 -->
+    <!-- <script>
+      function buttonClick() {
+        alert('click');
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="buttonclick()">버튼</button>
+  </body>
+</html> -->
+
+    <!-- 고전 이벤트 모델 -->
+    <script>
+      //   window.onload = function () {
+      //     let button = document.getElementById('button');
+      //     button.onclick = function () {
+      //       alert('click');
+      //     };
+      //   };
+
+      // addEventListener 활용해서 해보자
+      window.onload = function () {
+        const $button = document.getElementById('button');
+        // addEventListener에서는 onclick 사용X
+        // onclick은 html속성이나 직접 할당할 때 사용하는 것.
+        $button.addEventListener('click', () => {
+          alert('click');
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <button id="button">버튼</button>
+  </body>
+</html>

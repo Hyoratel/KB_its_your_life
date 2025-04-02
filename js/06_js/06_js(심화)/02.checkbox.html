@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02.checkbox</title>
+    <script>
+      window.onload = function () {
+        // 객체 지정
+        let food = document.getElementsByName('food');
+        console.log(food);
+
+        //버튼을 눌렀을 때 전송되어야 한다.
+        const $btn = document.getElementById('btn');
+        const selectAll = document.getElementById('selectAll');
+        const clearAll = document.getElementById('clearAll');
+        const checkboxes = document.querySelectorAll('input[name="food"]');
+
+        // 전체선택 체크박스 클릭 시 모든 체크박스 체크 또는 해제
+        selectAll.addEventListener("change", ()=>{
+          checkboxes.forEach(checkbox =>{
+            checkbox.checked = selectAll.checked;
+          });
+        });
+        
+        checkboxes.forEach(checkbox=>{
+          checkbox.addEventListener("change", ()=>{
+            selectAll.checked = Array.from(checkboxes).every(checkbox=>checkbox.checked);
+          });
+        });
+
+        // 전체 해제 버튼 클릭시 모든 체크박스 해제
+        clearAll.addEventListener("click",()=>{
+          checkboxes.forEach(checkbox => checkbox.checked = false);
+          selectAll.checked = false;
+        });
+
+        $btn.addEventListener('click', () => {
+          // 선택된 항목을 저장할 배열
+          let selectedFoods = [];
+
+          // nodelist를 순회하며 체크된 항목 value값만 수집
+          food.forEach((item) => {
+            if (item.checked) {
+              selectedFoods.push(item.value);
+            }
+          });
+          //   결과 출력 : 1개 이상 선택시 선택한 음식 출력, 선택하지 않을시
+          //              음식을 선택해달라는 메시지 출력
+          if (selectedFoods.length > 0) {
+            alert(selectedFoods);
+          } else {
+            alert('음식을 선택해주세요!');
+          }
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <form>
+      <div>
+        좋아하는 음식은?
+        <label><input type="checkbox" id="selectAll"> 전체 선택</label>
+        <label><input type="button" id="clearAll">전체 해제</label>
+        <br><label><input type="checkbox" name="food" value="라면" /> 라면</label>
+        </label><label><input type="checkbox" name="food" value="만두" /> 만두</label>
+        <label
+          ><input type="checkbox" name="food" value="불고기" /> 불고기</label
+        >
+        <input id="btn" type="button" value="전송" />
+      </div>
+    </form>
+  </body>
+</html>

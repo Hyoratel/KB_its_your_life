@@ -1,0 +1,64 @@
+<script>
+    // window.onload=function(){
+    //     let output='';
+    //     for(let i=0; i<256;i++){
+    //         output += '<div></div>';
+    //     }
+    //     document.body.innerHTML = output;
+
+    //     // 문서 객체를 선택
+    //     let divs = document.querySelectorAll('div');
+    //     for(let i=0; i<divs.length;i++){
+    //         let div = divs[i];
+
+    //         div.style.height = '2px';
+    //         div.style.background='rgb('+i+','+i+','+i+')';
+    //     };
+    // };
+
+    // 반대로 뒤집기 (다시 공부해보자)
+    // window.onload=function(){
+    //     // 객체 지정
+    //     let output='';
+    //     for(let i=0; i<256;i++){
+    //         output += '<div></div>';
+    //     }
+    //     document.body.innerHTML = output;
+
+    //     let divs = document.querySelectorAll('div');
+    //     // divs는 256이 존재하지 않으므로 -1 
+    //     for(let i = divs.length-1; i>=0;i--){
+    //         console.log('-i',i,'divs.length-', divs.length, 'divs.length-',divs.length - i);
+
+    //         let div = divs[i];
+
+    //         div.style.height = '2px';
+    //         div.style.background='rgb('+i+','+i+','+i+')';
+    //     };
+    // };
+
+    window.onload = function() {
+    // <div> 요소 256개 생성
+    let output = '';
+    for (let i = 0; i < 256; i++) {
+        output += '<div></div>';
+    }
+    document.body.innerHTML = output;
+
+    // 모든 <div> 요소 선택
+    let divs = document.querySelectorAll('div');
+
+    // 색상을 반대로 적용
+    for (let i = divs.length - 1, j = 0; i >= 0; i--, j++) {
+        console.log('-i', i, 'divs.length-', divs.length, 'j-', j);
+
+        let div = divs[i]; // 현재 div 선택
+
+        div.style.height = '2px'; 
+        div.style.background = 'rgb(' + j + ',' + j + ',' + j + ')';
+    }
+};
+
+</script>
+</head>
+<body></body>

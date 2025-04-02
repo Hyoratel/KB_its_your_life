@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>floatWithOverflow</title>
+    <style>
+      /* float속성 사용시 margin이 겹치지 않는다. */
+      div.item {
+        float: left;
+        margin: 0;
+        margin-right: 6px;
+        padding: 10px;
+        /* text-align 사용은 width가 정해져있을때 사용 */
+        border: 1px solid black;
+      }
+      div.item:first-child {
+        margin-left: 3px;
+      }
+      div.item:last-child {
+        margin-right: 3px;
+      }
+      /* float 속성 제거시 overflow 또는 clear 사용 */
+      .container {
+        /* overflow: hidden; */
+      }
+      div.clear {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ....</p>
+    <div class="container">
+      <div class="item">메뉴 - 1</div>
+      <div class="item">메뉴 - 2</div>
+      <div class="item">메뉴 - 3</div>
+      <div class="item">메뉴 - 4</div>
+    </div>
+    <div class="clear"></div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+  </body>
+</html>
