@@ -5,6 +5,7 @@
   </div>
 </template>
 <script>
+// ref : 기본타입의 값을 반응형으로 만들때 사용하는 함수
 import { ref } from 'vue';
 export default {
   name: 'Calc',
