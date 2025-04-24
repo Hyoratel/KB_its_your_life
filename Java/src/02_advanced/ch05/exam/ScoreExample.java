@@ -20,7 +20,7 @@ public class ScoreExample {
 
             int selcetNo = scanner.nextInt();
 
-
+            //if문 사용
             if (selcetNo == 1) {
                 System.out.println("학생수> ");
                 studentNum = scanner.nextInt();
@@ -53,5 +53,61 @@ public class ScoreExample {
             } else System.out.println("1~5번 중 입력하세요.");
 
         } scanner.close();
+
+        //switch문 사용
+//        switch (selectNo) {
+//            case 1:
+//                System.out.print("학생수> ");
+//                studentNum = scanner.nextInt();
+//                scores = new int[studentNum]; // 빈 배열 생성
+//                break;
+//
+//            case 2:
+//                if (scores == null) {
+//                    System.out.println("먼저 학생 수를 입력하세요.");
+//                    break;
+//                }
+//                for (int i = 0; i < studentNum; i++) {
+//                    System.out.print("scores[" + i + "]> ");
+//                    scores[i] = scanner.nextInt();
+//                }
+//                break;
+//
+//            case 3:
+//                if (scores == null) {
+//                    System.out.println("먼저 학생 수와 점수를 입력하세요.");
+//                    break;
+//                }
+//                for (int i = 0; i < studentNum; i++) {
+//                    System.out.println("scores[" + i + "] = " + scores[i]);
+//                }
+//                break;
+//
+//            case 4:
+//                if (scores == null) {
+//                    System.out.println("먼저 점수를 입력하세요.");
+//                    break;
+//                }
+//                int max = 0;
+//                int sum = 0;
+//                for (int i = 0; i < studentNum; i++) {
+//                    if (scores[i] > max) {
+//                        max = scores[i];
+//                    }
+//                    sum += scores[i];
+//                }
+//                double avg = (double) sum / studentNum;
+//                System.out.println("최고점수: " + max);
+//                System.out.println("평균점수: " + avg);
+//                break;
+//
+//            case 5:
+//                System.out.println("프로그램 종료");
+//                run = false;
+//                break;
+//
+//            default:
+//                System.out.println("1~5번 중 입력하세요.");
+//        }
     }
 }
