@@ -164,27 +164,46 @@ public class BankApplication {
                     Account target =findAccountByNumber(accounts, accountCount, sc);
 
                     //출금액 입력 & 유효성 검사
-                    int withdrawAmount = 0;
-                    while (true) {
+//                    int withdrawAmount = 0;
+//                    while (true) {
+//                        System.out.print("출금액: ");
+//                        try{
+//                            withdrawAmount = Integer.parseInt(sc.nextLine());
+//                            if(withdrawAmount <= 0) {
+//                                System.out.println("출금액은 1원 이상이어야 합니다.\n");
+//                                continue;
+//                            }
+//                            if (withdrawAmount > target.getBalance()) {
+//                                System.out.println("잔액이 부족합나다. 현재 잔액: "+target.getBalance());
+//                                continue;
+//                            }
+//                            break;
+//                        } catch (NumberFormatException e) {
+//                            System.out.println("숫자 형식이 잘못되었습니다. 예: \"10000\" 형식으로 입력해주세요.");
+//                        }
+//                    }
+//                    target.withdraw(withdrawAmount); // 출금 처리
+//                    System.out.println("출금 완료! 현재 잔액: "+target.getBalance()+"원");
+//                    break;
+
+                    //출금 시도 & 예외처리
+                    while(true){
                         System.out.print("출금액: ");
                         try{
-                            withdrawAmount = Integer.parseInt(sc.nextLine());
-                            if(withdrawAmount <= 0) {
-                                System.out.println("출금액은 1원 이상이어야 합니다.\n");
-                                continue;
-                            }
-                            if (withdrawAmount > target.getBalance()) {
-                                System.out.println("잔액이 부족합나다. 현재 잔액: "+target.getBalance());
-                                continue;
-                            }
+                            int withdrawAmount = Integer.parseInt(sc.nextLine());
+                            target.withdraw(withdrawAmount); // 출금 시도 -> 내부 예외 발생 가능
+                            System.out.println("출금 완료! 현재 잔액: "+target.getBalance()+"원");
                             break;
                         } catch (NumberFormatException e) {
                             System.out.println("숫자 형식이 잘못되었습니다. 예: \"10000\" 형식으로 입력해주세요.");
+                        } catch (IllegalArgumentException e){
+                            System.out.println("입력 오류: "+e.getMessage());
+                        } catch (InsufficientException e){
+                            System.out.println("출금 실패: "+e.getMessage());
                         }
                     }
-                    target.withdraw(withdrawAmount); // 출금 처리
-                    System.out.println("출금 완료! 현재 잔액: "+target.getBalance()+"원");
-                    break; }
+                    break;
+                }
                 case 5:
                     run = false;
                     break;

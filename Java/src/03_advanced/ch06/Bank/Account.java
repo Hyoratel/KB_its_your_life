@@ -54,11 +54,11 @@ public class Account {
 
     }
     //출금 기능:금액만큼 잔액 감소(출금액이 잔액을 넘을 순 없음)
-    public void withdraw(int amount) {
+    public void withdraw(int amount) throws InsufficientException {
         if(balance >= amount){
             balance -= amount;
         } else {
-            System.out.println("잔액이 부족합니다.");
+            throw new InsufficientException("잔액이 부족합니다. 현재 잔액: "+balance);
         }
     }
 }
