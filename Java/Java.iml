@@ -15,8 +15,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/05_basic" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/07_advanced" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/07_basic" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/08_advanced" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/08_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/05_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/08_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/09_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/09_basic" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
