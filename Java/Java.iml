@@ -20,6 +20,9 @@
       <sourceFolder url="file://$MODULE_DIR$/src/08_advanced" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/09_advanced" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/09_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/10_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/11_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/10_advanced" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
