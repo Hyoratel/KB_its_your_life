@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/01_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/01_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/02_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/02_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/03_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/03_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/04_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/05_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/05_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/07_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/07_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/08_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/08_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/09_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/09_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/10_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/10_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/11_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/11_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/12_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/12_basic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/13_advanced" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Back/Java/src/13_basic" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="lombok-1.18.30" level="project" />
+  </component>
+</module>

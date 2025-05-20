@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="04_vue">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Front/vue/04_vue/04_vue(심화).zip!/" />
+      <root url="jar://$PROJECT_DIR$/Front/vue/04_vue/04_vue(기본).zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
