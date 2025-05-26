@@ -1,0 +1,45 @@
+// Gradle에서 Java 플러그인을 적용하여 Java 컴파일, 테스트 등의 작업을 지원
+plugins {
+    id 'java'
+}
+
+// 프로젝트의 그룹 ID와 버전 설정 (패키징 및 의존성 관리 시 사용)
+group = 'org.scoula'
+version = '1.0-SNAPSHOT'
+
+// 의존성을 받을 원격 저장소로 Maven Central을 지정
+repositories {
+    mavenCentral()
+}
+
+// 필요한 라이브러리 메이븐 저장소에서 다운로드 받아달라고 셋팅하는 부분
+// 이 프로젝트는 이 라이브러리가 없으면 안되기 때문에
+// 이 프로젝트는 이 라이브러리에 의존적(dependencies)이다라고 표현
+dependencies {
+    //라이브러리도 실제 프로젝트할 때 사용할 라이브러리
+
+    // CSV 파일을 읽고 쓰기 위한 라이브러리 (OpenCSV)
+    implementation 'com.opencsv:opencsv:5.5'
+
+    // MySQL 데이터베이스와 Java 애플리케이션을 연결하기 위한 JDBC 드라이버(런타임에 필요)
+    implementation 'com.mysql:mysql-connector-j:8.3.0'
+
+    // Lombok 라이브러리 - 컴파일 시점에만 필요함 (예: getter, setter 자동 생성)
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // 테스트 코드 작성 시 Lombok 사용을 위한 설정
+    testCompileOnly 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    // JUnit5 테스트 플랫폼 BOM (Bill of Materials)을 지정해 JUnit 관련 버전 충돌 방지
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    // JUnit5의 Jupiter API를 사용한 단위 테스트 지원
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+// JUnit5로 테스트를 실행하겠다는 설정이에요.
+// 이걸 써야 @Test 같은 어노테이션이 제대로 작동해요.
+test {
+    useJUnitPlatform()
+}
