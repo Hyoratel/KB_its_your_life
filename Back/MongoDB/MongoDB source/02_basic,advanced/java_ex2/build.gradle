@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.scoula'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral() // 외부 라이브러이 다운로드를 위한 Maven 중앙 저장소 사용
+}
+
+dependencies {
+    // 로깅 라이브러리 : 콘솔에 로그를 보기 좋게 출력
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+
+    // MongoDB Java 드라이버 : MongoClient, Document 등 MongoDB 연동에 필요한 라이브러리
+    implementation 'org.mongodb:mongodb-driver-sync:5.0.0'
+
+    //(선택) JUnit 테스트 작성 시 사용할 수 있는 의존성
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
