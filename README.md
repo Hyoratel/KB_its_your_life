@@ -8,10 +8,8 @@
 - complete: ☑ uncomplete: ☐
 
 ### 1. 웹 표준 HTML/CSS/JavaScript
-
 <details>
 <summary>🔍HTML/CSS/JavaScript CheckList</summary>
-
 <br>
 
 | 구분 | 항목                   |  디렉토리 명  | 기본 | 심화 |
@@ -101,7 +99,7 @@
 |  05  | 테이블, 뷰                                 |  ☑   |  ☑   |
 |  06  | 인덱스, 사용자 관리                        |  ☑   |  ☑   |
 |  07  | Java 연동 JDBC 프로그래밍                  |  ☑   |  ☐   |
-|  08  | Java 연동 JDBC 프로그래밍-Travel           |  ☑   |  ☐   |
+|  08  | Java 연동 JDBC 프로그래밍-Travel           |  ☑   |  ☑   |
 
 </details>
 <details>
