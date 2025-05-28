@@ -2,15 +2,13 @@
 
 ## 👨‍💻Fullstack checklist - 18회차 전효빈
 
-## 📗Front
+<details>
+<summary>📗 Front</summary>
 
 - 2025.03.04-2025.04.06
 - complete: ☑ uncomplete: ☐
 
-### 1. 웹 표준 HTML/CSS/JavaScript
-<details>
-<summary>🔍HTML/CSS/JavaScript CheckList</summary>
-<br>
+## 1. 웹 표준 HTML/CSS/JavaScript
 
 | 구분 | 항목                   |  디렉토리 명  | 기본 | 심화 |
 | :--: | ---------------------- | :-----------: | :--: | :--: |
@@ -21,14 +19,7 @@
 |  05  | 자바스크립트 기본 문법 | 05_javascript |  ☑   |  ☑   |
 |  06  | 문서 객체 모델         | 06_javascript |  ☑   |  ☑   |
 
-</details>
-
-### 2. 웹 인터페이스 구축을 위한 Vue.js
-
-<details>
-<summary>🔍 Vue.js CheckList</summary>
-
-<br>
+## 2. 웹 인터페이스 구축을 위한 Vue.js
 
 | 구분 | 항목                  | 디렉토리 명 | 기본 | 심화 |
 | :--: | --------------------- | :---------: | :--: | :--: |
@@ -51,16 +42,13 @@
 
 ---
 
-## 📘Back
+<details>
+<summary>📘 Back</summary>
 
-### 3. JAVA
+## 3. JAVA
 
 - 2025.04.07-2025.05.12
 - complete: ☑ uncomplete: ☐
-<details>
-<summary>🔍 Java CheckList</summary>
-
-<br>
 
 | 구분 | 자바 프로그래밍 항목              | 기본 | 심화 |
 | :--: | --------------------------------- | :--: | :--: |
@@ -79,16 +67,10 @@
 |  12  | 스트림 요소 처리                  |  ☑   |  ☑   |
 |  13  | 데이터 입출력                     |  ☑   |  ☑   |
 
-</details>
+## 4. mySQL
 
-### 4. mySQL / MongoDB
-
-- 2025.05.13-2025.05.28
+- 2025.05.13-2025.05.22
 - complete: ☑ uncomplete: ☐
-<details>
-<summary>🔍 mySQL CheckList </summary>
-
-<br>
 
 | 구분 | 실습 항목                                  | 기본 | 심화 |
 | :--: | ------------------------------------------ | :--: | :--: |
@@ -101,15 +83,40 @@
 |  07  | Java 연동 JDBC 프로그래밍                  |  ☑   |  ☐   |
 |  08  | Java 연동 JDBC 프로그래밍-Travel           |  ☑   |  ☑   |
 
-</details>
-<details>
-<summary>🔍 MongoDB CheckList </summary>
+## 5. MongoDB
 
-<br>
+- 2025.05.26-2025.05.27
+- complete: ☑ uncomplete: ☐
 
 | 구분 | 실습 항목        | 기본 | 심화 |
 | :--: | ---------------- | :--: | :--: |
 |  01  | MongoDB          |  ☑   |  ☑   |
 |  02  | 몽고DB Java 연동 |  ☑   |  ☑   |
+
+## 6. JSP & Servlet
+
+- 2025.05.28-2025.06.
+- complete: ☐ uncomplete: ☑
+
+| 구분 | 실습 항목                                   | 기본 | 심화 |
+| ---- | ------------------------------------------- | :--: | :--: |
+|      | Servlet, JSP, JSTL 기반 서버 프로그래밍     |      |      |
+| 01   | 서블릿 기초                                 |  ☑   |  ☑   |
+| 02   | JSP의 이해                                  |  ☐   |  ☐   |
+| 03   | 서블릿 심화                                 |  ☐   |  ☐   |
+| 04   | 요청 포워딩, EL, JSTL                       |  ☐   |  ☐   |
+| 05   | FrontController                             |  ☐   |  ☐   |
+|      | Spring Framework를 활용한 애플리케이션 개발 |      |      |
+| 06   | Spring 이해                                 |  ☐   |  ☐   |
+| 07   | Spring MVC                                  |  ☐   |  ☐   |
+| 08   | Spring-MyBatis 연동                         |  ☐   |  ☐   |
+| 09   | Spring 기본 게시판                          |  ☐   |  ☐   |
+| 10   | Spring 기본 게시판, 파일 업로드             |  ☐   |  ☐   |
+| 11   | Rest                                        |  ☐   |  ☐   |
+| 12   | OpenAPI                                     |  ☐   |  ☐   |
+| 13   | Spring AOP                                  |  ☐   |  ☐   |
+| 14   | Spring Security Form 인증                   |  ☐   |  ☐   |
+| 15   | Spring Security JWT 인증                    |  ☐   |  ☐   |
+| 16   | Spring Security JWT 인증2                   |  ☐   |  ☐   |
 
 </details>
