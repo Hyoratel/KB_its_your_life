@@ -105,7 +105,7 @@
 | 02   | JSP의 이해                                  |  ☑   |  ☐   |
 | 03   | 서블릿 심화                                 |  ☑   |  ☐   |
 | 04   | 요청 포워딩, EL, JSTL                       |  ☑   |  ☐   |
-| 05   | FrontController                             |  ☐   |  ☐   |
+| 05   | FrontController                             |  ☑   |  ☑   |
 |      | Spring Framework를 활용한 애플리케이션 개발 |      |      |
 | 06   | Spring 이해                                 |  ☐   |  ☐   |
 | 07   | Spring MVC                                  |  ☐   |  ☐   |
