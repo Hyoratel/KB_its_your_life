@@ -109,7 +109,7 @@
 |      | Spring Framework를 활용한 애플리케이션 개발 |      |      |
 | 06   | Spring 이해                                 |  ☑   |  ☐   |
 | 07   | Spring MVC                                  |  ☑   |  ☑   |
-| 08   | Spring-MyBatis 연동                         |  ☐   |  ☐   |
+| 08   | Spring-MyBatis 연동                         |  ☑   |  ☑   |
 | 09   | Spring 기본 게시판                          |  ☐   |  ☐   |
 | 10   | Spring 기본 게시판, 파일 업로드             |  ☐   |  ☐   |
 | 11   | Rest                                        |  ☐   |  ☐   |
